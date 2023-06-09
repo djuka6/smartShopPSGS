@@ -1,0 +1,203 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/api/Users",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 4000
+        }
+      ],
+      "UpstreamPathTemplate": "/Users",
+      "UpstreamHttpMethod": [ "GET" ],
+      "AddHeadersToRequest": {
+        "HeaderKey": "HeaderValue"
+      },
+      "AddClaimsToRequest": {
+        "ClaimKey": "ClaimValue"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Users/GetAllSellers",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 4000
+        }
+      ],
+      "UpstreamPathTemplate": "/Users/getSellers",
+      "UpstreamHttpMethod": [ "OPTIONS", "GET" ],
+      "EnableCors": true,
+      "CorsOptions": {
+        "AllowedOrigins": [ "http://localhost:3000" ],
+        "AllowedMethods": [ "GET" ],
+        "AllowedHeaders": [ "Content-Type" ]
+      },
+      "RouteIsCaseSensitive": false
+    },
+    {
+      "DownstreamPathTemplate": "/api/Users/verify/{userIdToVerify}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 4000
+        }
+      ],
+      "UpstreamPathTemplate": "/Users/verify/{userIdToVerify}",
+      "UpstreamHttpMethod": [ "OPTIONS", "POST" ],
+      "EnableCors": true,
+      "CorsOptions": {
+        "AllowedOrigins": [ "http://localhost:3000" ],
+        "AllowedMethods": [ "POST" ],
+        "AllowedHeaders": [ "Content-Type" ]
+      },
+      "RouteIsCaseSensitive": false
+    },
+    {
+      "DownstreamPathTemplate": "/api/Users/update",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 4000
+        }
+      ],
+      "UpstreamPathTemplate": "/Users/update",
+      "UpstreamHttpMethod": [ "OPTIONS", "PUT" ],
+      "EnableCors": true,
+      "CorsOptions": {
+        "AllowedOrigins": [ "http://localhost:3000" ],
+        "AllowedMethods": [ "PUT" ],
+        "AllowedHeaders": [ "Content-Type" ]
+      },
+      "RouteIsCaseSensitive": false
+    },
+    {
+      "DownstreamPathTemplate": "/api/Users/register",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 4000
+        }
+      ],
+      "UpstreamPathTemplate": "/Users/register",
+      "UpstreamHttpMethod": [ "OPTIONS", "POST" ],
+      "EnableCors": true,
+      "CorsOptions": {
+        "AllowedOrigins": [ "http://localhost:3000" ],
+        "AllowedMethods": [ "POST" ],
+        "AllowedHeaders": [ "Content-Type" ]
+      },
+      "RouteIsCaseSensitive": false
+    },
+    {
+      "DownstreamPathTemplate": "/api/Users/Authenticate",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 4000
+        }
+      ],
+      "UpstreamPathTemplate": "/Users/Authenticate",
+      "UpstreamHttpMethod": [ "OPTIONS", "POST" ],
+      "EnableCors": true,
+      "CorsOptions": {
+        "AllowedOrigins": [ "http://localhost:3000" ],
+        "AllowedMethods": [ "POST" ],
+        "AllowedHeaders": [ "Content-Type" ]
+      },
+      "RouteIsCaseSensitive": false
+    },
+    {
+      "DownstreamPathTemplate": "/api/Users/Verify/{userIdToVerify}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 4000
+        }
+      ],
+      "UpstreamPathTemplate": "/Users/Verify/{userIdToVerify}",
+      "UpstreamHttpMethod": [ "POST" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Users/waitlist",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 4000
+        }
+      ],
+      "UpstreamPathTemplate": "/Users/Waitlist",
+      "UpstreamHttpMethod": [ "POST" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Orders",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7157
+        }
+      ],
+      "UpstreamPathTemplate": "/Orders",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Orders",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7157
+        }
+      ],
+      "UpstreamPathTemplate": "/Orders",
+      "UpstreamHttpMethod": [ "POST" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Orders/{id}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7157
+        }
+      ],
+      "UpstreamPathTemplate": "/Orders/{id}",
+      "UpstreamHttpMethod": [ "PUT" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Product",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7157
+        }
+      ],
+      "UpstreamPathTemplate": "/Product",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Product",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7157
+        }
+      ],
+      "UpstreamPathTemplate": "/Product",
+      "UpstreamHttpMethod": [ "POST" ]
+    }
+
+
+  ]
+}
