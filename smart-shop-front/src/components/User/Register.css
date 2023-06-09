@@ -1,0 +1,84 @@
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  background-color: #f5f5f531;
+}
+
+.register-form {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 600px; /* Increased the width to accommodate two columns */
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.register-form .form-fields {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Split the form fields into two columns */
+  gap: 16px; /* Added gap between form fields */
+}
+
+.register-form .ms-TextField {
+  width: 100%;
+  font-size: 14px; /* Adjusted font size for better readability */
+}
+
+.register-form .ms-Label {
+  font-size: 12px; /* Adjusted font size for better readability */
+}
+
+.register-form .ms-TextField-errorMessage {
+  font-size: 12px; /* Adjusted font size for better readability */
+}
+
+.register-form h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+.register-form .submit-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px; /* Added margin to separate from form fields */
+}
+
+.register-form .upload-label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-top: 16px; /* Added margin to separate from form fields */
+}
+
+.register-form .upload-label:hover {
+  color: #0078d4;
+}
+
+.register-form .upload-icon {
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+/* Hide Choose file button */
+.register-form .upload-label input[type="file"] {
+  display: none;
+}
+
+/* Style the upload icon display */
+.register-form .upload-label::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: #0078d4;
+  border-radius: 50%;
+  margin-right: 5px;
+}
