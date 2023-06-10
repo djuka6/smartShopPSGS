@@ -17,6 +17,15 @@
   text-align: left;
   max-width: 600px; /* Increased the max-width to match register form */
   margin-top: 100px;
+  animation: fadeIn 0.5s ease-in;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .card-header {
@@ -83,12 +92,15 @@
   font-size: 12px;
 }
 
-.submit-button {
+.submit-button-container {
   display: flex;
   justify-content: center;
   margin-top: 16px;
 }
 
+.submit-button {
+  padding-bottom: 20px; /* Add bottom padding */
+}
 .upload-label {
   display: flex;
   align-items: center;

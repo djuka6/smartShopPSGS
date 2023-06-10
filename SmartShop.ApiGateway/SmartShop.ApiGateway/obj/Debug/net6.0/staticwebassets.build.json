@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "KtJtWuFUX5XIWVa+uaDJQSo9RBhRi859Fs6p0q2gOV8=",
+  "Source": "SmartShop.ApiGateway",
+  "BasePath": "_content/SmartShop.ApiGateway",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

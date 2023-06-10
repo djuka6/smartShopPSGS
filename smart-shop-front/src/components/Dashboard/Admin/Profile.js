@@ -219,11 +219,13 @@ function Profile() {
               )}
             </DocumentCardDetails>
             {isEditMode && (
-              <PrimaryButton
-                text="Sačuvaj"
-                onClick={handleSubmit}
-                styles={{ root: { marginTop: "10px" } }}
-              />
+              <div className="submit-button-container">
+                <PrimaryButton
+                  text="Sačuvaj"
+                  onClick={handleSubmit}
+                  styles={{ root: { marginBottom: "20px" } }} // Apply margin-bottom directly to the button
+                />
+              </div>
             )}
           </DocumentCard>
         ) : (

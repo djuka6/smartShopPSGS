@@ -1,7 +1,7 @@
 .top-bar {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end; /* Align to the right corner */
   position: fixed;
   top: 0;
   left: 0;
@@ -16,6 +16,7 @@
 
 .top-bar a {
   text-decoration: none;
+  color: #ffffff; /* Set the color to white */
 }
 
 .tab {
@@ -23,19 +24,46 @@
   align-items: center;
   cursor: pointer;
   padding: 10px;
-  transition: background-color 0.2s;
+  transition: background-color 0.8s;
 }
 
-.tab:hover {
-  background-color: #106ebe;
+.tab:hover .tab-icon {
+  animation: rotateScaleAnimation 0.8s ease-in-out infinite;
+}
+
+@keyframes rotateScaleAnimation {
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+  50% {
+    transform: scale(1.2) rotate(180deg);
+  }
+  100% {
+    transform: scale(1) rotate(360deg);
+  }
 }
 
 .tab-icon {
   font-size: 20px;
-  color: #ffffff; /* Set the color to white */
+  color: #ffffff;
 }
 
 .tab-text {
   margin-left: 5px;
   color: #ffffff; /* Set the color to white */
+}
+
+.logout-tab {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+.logout-button {
+  display: flex;
+  align-items: center;
+}
+
+.logout-button .tab-icon {
+  animation: rotateScaleAnimation 0.8s ease-in-out infinite;
 }

@@ -532,11 +532,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\OneDrive\\Documents\\cure_back\\SmartShop.ApiGateway\\SmartShop.ApiGateway\\SmartShop.ApiGateway.csproj",
+      "projectUniqueName": "C:\\Users\\User\\OneDrive\\Documents\\cure_back\\smartShopPSGS\\SmartShop.ApiGateway\\SmartShop.ApiGateway\\SmartShop.ApiGateway.csproj",
       "projectName": "SmartShop.ApiGateway",
-      "projectPath": "C:\\Users\\User\\OneDrive\\Documents\\cure_back\\SmartShop.ApiGateway\\SmartShop.ApiGateway\\SmartShop.ApiGateway.csproj",
+      "projectPath": "C:\\Users\\User\\OneDrive\\Documents\\cure_back\\smartShopPSGS\\SmartShop.ApiGateway\\SmartShop.ApiGateway\\SmartShop.ApiGateway.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\OneDrive\\Documents\\cure_back\\SmartShop.ApiGateway\\SmartShop.ApiGateway\\obj\\",
+      "outputPath": "C:\\Users\\User\\OneDrive\\Documents\\cure_back\\smartShopPSGS\\SmartShop.ApiGateway\\SmartShop.ApiGateway\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

@@ -147,14 +147,7 @@
         }
       ],
       "UpstreamPathTemplate": "/Orders",
-      "UpstreamHttpMethod": [ "OPTIONS", "GET" ],
-      "EnableCors": true,
-      "CorsOptions": {
-        "AllowedOrigins": [ "http://localhost:3000" ],
-        "AllowedMethods": [ "GET" ],
-        "AllowedHeaders": [ "Content-Type" ]
-      },
-      "RouteIsCaseSensitive": false
+      "UpstreamHttpMethod": [ "GET" ]
     },
     {
       "DownstreamPathTemplate": "/api/Orders",

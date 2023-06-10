@@ -28,15 +28,30 @@
 
 .register-form .ms-TextField {
   width: 100%;
-  font-size: 14px; /* Adjusted font size for better readability */
 }
 
-.register-form .ms-Label {
-  font-size: 12px; /* Adjusted font size for better readability */
+.register-form .ms-TextField-fieldGroup {
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  height: 32px;
+  padding: 6px 8px;
+  font-size: 14px;
+}
+
+.register-form .ms-TextField-fieldGroup:hover,
+.register-form .ms-TextField-fieldGroup:focus {
+  border-color: #0078d4;
+}
+
+.register-form .ms-TextField-label {
+  font-size: 14px;
+  color: #333;
 }
 
 .register-form .ms-TextField-errorMessage {
-  font-size: 12px; /* Adjusted font size for better readability */
+  font-size: 14px;
+  color: #ff0000;
 }
 
 .register-form h2 {
