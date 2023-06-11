@@ -6,6 +6,7 @@
     "@fluentui/react": "^8.110.1",
     "@fluentui/react-icons": "^2.0.203",
     "@fluentui/web-components": "^2.5.15",
+    "@paypal/react-paypal-js": "^7.8.3",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",

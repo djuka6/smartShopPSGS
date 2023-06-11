@@ -1,0 +1,35 @@
+.all-products-container {
+  text-align: center;
+}
+
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.product-card {
+  max-width: 300px;
+  width: 100%;
+}
+
+.product-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.product-image img {
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.modal-content {
+  padding: 20px;
+}
+
+.modal-text {
+  font-size: 18px;
+  font-weight: bold;
+}

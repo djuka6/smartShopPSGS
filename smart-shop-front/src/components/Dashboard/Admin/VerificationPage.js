@@ -14,13 +14,14 @@ import {
 import { AuthContext } from "../../AuthContext";
 import TopBar from "../Admin/AdminTopBar";
 import "./VerificationPage.css";
-
+import { useNavigate } from "react-router-dom";
 function VerificationPage() {
   const { token } = useContext(AuthContext);
   const [users, setUsers] = useState([]);
   const [selectedUser, setSelectedUser] = useState(null);
   const [isDialogVisible, setIsDialogVisible] = useState(false);
   const [dialogAction, setDialogAction] = useState(""); // Stores the selected dialog action: "accept" or "decline"
+  const navigate = useNavigate();
 
   useEffect(() => {
     const fetchData = async () => {
@@ -79,7 +80,7 @@ function VerificationPage() {
           `User ${dialogAction === "accept" ? "accepted" : "declined"}:`,
           selectedUser
         );
-        window.location.reload(); // Reload the page
+        navigate("/admin-dashboard"); // Reload the page
       } else {
         console.log(
           `Error ${

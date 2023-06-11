@@ -165,8 +165,15 @@
           "Port": 7157
         }
       ],
-      "UpstreamPathTemplate": "/Orders",
-      "UpstreamHttpMethod": [ "POST" ]
+      "UpstreamPathTemplate": "/Order",
+      "UpstreamHttpMethod": [ "OPTIONS", "POST" ],
+      "EnableCors": true,
+      "CorsOptions": {
+        "AllowedOrigins": [ "http://localhost:3000" ],
+        "AllowedMethods": [ "POST" ],
+        "AllowedHeaders": [ "Content-Type" ]
+      },
+      "RouteIsCaseSensitive": false
     },
     {
       "DownstreamPathTemplate": "/api/Orders/{id}",
@@ -189,8 +196,72 @@
           "Port": 7157
         }
       ],
-      "UpstreamPathTemplate": "/Product",
-      "UpstreamHttpMethod": [ "GET" ]
+      "UpstreamPathTemplate": "/Products",
+      "UpstreamHttpMethod": [ "OPTIONS", "GET" ],
+      "EnableCors": true,
+      "CorsOptions": {
+        "AllowedOrigins": [ "http://localhost:3000" ],
+        "AllowedMethods": [ "GET" ],
+        "AllowedHeaders": [ "Content-Type" ]
+      },
+      "RouteIsCaseSensitive": false
+    },
+    {
+      "DownstreamPathTemplate": "/api/Product/update",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7157
+        }
+      ],
+      "UpstreamPathTemplate": "/Product/update",
+      "UpstreamHttpMethod": [ "OPTIONS", "PUT" ],
+      "EnableCors": true,
+      "CorsOptions": {
+        "AllowedOrigins": [ "http://localhost:3000" ],
+        "AllowedMethods": [ "PUT" ],
+        "AllowedHeaders": [ "Content-Type" ]
+      },
+      "RouteIsCaseSensitive": false
+    },
+    {
+      "DownstreamPathTemplate": "/api/Product/delete/{productId}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7157
+        }
+      ],
+      "UpstreamPathTemplate": "/Product/delete/{productId}",
+      "UpstreamHttpMethod": [ "OPTIONS", "DELETE" ],
+      "EnableCors": true,
+      "CorsOptions": {
+        "AllowedOrigins": [ "http://localhost:3000" ],
+        "AllowedMethods": [ "DELETE" ],
+        "AllowedHeaders": [ "Content-Type" ]
+      },
+      "RouteIsCaseSensitive": false
+    },
+    {
+      "DownstreamPathTemplate": "/api/Product/{productId}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7157
+        }
+      ],
+      "UpstreamPathTemplate": "/Product/{productId}",
+      "UpstreamHttpMethod": [ "OPTIONS", "GET" ],
+      "EnableCors": true,
+      "CorsOptions": {
+        "AllowedOrigins": [ "http://localhost:3000" ],
+        "AllowedMethods": [ "GET" ],
+        "AllowedHeaders": [ "Content-Type" ]
+      },
+      "RouteIsCaseSensitive": false
     },
     {
       "DownstreamPathTemplate": "/api/Product",
@@ -202,7 +273,52 @@
         }
       ],
       "UpstreamPathTemplate": "/Product",
-      "UpstreamHttpMethod": [ "POST" ]
+      "UpstreamHttpMethod": [ "OPTIONS", "POST" ],
+      "EnableCors": true,
+      "CorsOptions": {
+        "AllowedOrigins": [ "http://localhost:3000" ],
+        "AllowedMethods": [ "POST" ],
+        "AllowedHeaders": [ "Content-Type" ]
+      },
+      "RouteIsCaseSensitive": false
+    },
+    {
+      "DownstreamPathTemplate": "/api/Orders/sellers",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7157
+        }
+      ],
+      "UpstreamPathTemplate": "/SellersOrders",
+      "UpstreamHttpMethod": [ "OPTIONS", "GET" ],
+      "EnableCors": true,
+      "CorsOptions": {
+        "AllowedOrigins": [ "http://localhost:3000" ],
+        "AllowedMethods": [ "GET" ],
+        "AllowedHeaders": [ "Content-Type" ]
+      },
+      "RouteIsCaseSensitive": false
+    },
+    {
+      "DownstreamPathTemplate": "/api/Orders/sellers-old",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7157
+        }
+      ],
+      "UpstreamPathTemplate": "/SellersOldOrders",
+      "UpstreamHttpMethod": [ "OPTIONS", "GET" ],
+      "EnableCors": true,
+      "CorsOptions": {
+        "AllowedOrigins": [ "http://localhost:3000" ],
+        "AllowedMethods": [ "GET" ],
+        "AllowedHeaders": [ "Content-Type" ]
+      },
+      "RouteIsCaseSensitive": false
     }
 
 
